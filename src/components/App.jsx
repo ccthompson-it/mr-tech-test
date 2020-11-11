@@ -5,12 +5,28 @@ import tshirt from '../classic-tee.jpg'
 class App extends Component {
   constructor(props) {
     super(props)
+    this.state = {
+      dropdown: false,
+    }
   }
-  
+
+  toggleDropdown = () => {
+    this.setState({dropdown: !this.state.dropdown})
+  }
+
   render() {
     return (
       <Fragment>
-        <div id="nav-bar"></div>
+        <div id="nav-bar">
+          <div id="dropdown">
+            <p  id="dropdown-text" className={this.state.dropdown ? 'dropdown-active' : ''}
+              onMouseEnter={this.toggleDropdown} onMouseLeave={this.toggleDropdown}
+            >
+              My Cart
+            </p>
+            {this.state.dropdown && <div id="dropdown-content">Hello!</div>}
+          </div>
+        </div>
         <div id="card-box">
           <img id="card-image" src={tshirt} alt="plain white t-shirt" />
           <div id="card-body">

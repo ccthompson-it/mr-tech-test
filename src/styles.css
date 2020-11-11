@@ -34,6 +34,35 @@ button:focus {
   margin-top: 15px;
 }
 
+#dropdown {
+  position: absolute;
+  top: 15px;
+  right: 10%;
+  font-size: 1.1rem;
+  
+}
+
+#dropdown-text {
+  text-align: center;
+  align-items: center;
+  line-height: 40px;
+  height: 40px;
+  width: 100px;
+}
+
+.dropdown-active {
+  background-color: white;
+  color: #222222;
+}
+
+#dropdown-content {
+  position: absolute;
+  right: 0;
+  background-color: black;
+  width: 400px;
+  height: 200px;
+}
+
 #card-box {
   width: 100%;
   padding: 40px 30px;
@@ -105,6 +134,7 @@ button:focus {
   color: white;
   transition: ease-in-out .2s;
 }
+
 
 @media only screen and (min-width: 750px) {
   * {
