@@ -58,9 +58,27 @@ button:focus {
 #dropdown-content {
   position: absolute;
   right: 0;
-  background-color: black;
-  width: 400px;
-  height: 200px;
+  background-color: white;
+  width: 350px;
+  padding: 0 25px;
+  border: 2px solid #F6F6F7;
+}
+
+.dropdown-card {
+  margin: 25px auto;
+  background-color: white;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+}
+
+.dropdown-card-image {
+  width: 50px;
+}
+
+.dropdown-card-body {
+  width: 200px;
+  padding-top: 5px;
 }
 
 #card-box {
