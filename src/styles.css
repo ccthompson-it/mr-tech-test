@@ -4,8 +4,30 @@
   font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
+.text-light {
+  color: #888888;
+}
+
+.text-dark {
+  color: #222222;
+}
+
+.text-red {
+  color: #C90000;
+}
+
+button {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  background-color: white;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
 #nav-bar {
-  background-color: black;
+  background-color: #F6F6F7;
   width: 100%;
   height: 40px;
   margin-top: 15px;
@@ -13,11 +35,66 @@
 
 #card-box {
   width: 100%;
-  margin-top: 40px;
-  padding: 0 30px;
+  padding: 40px 30px;
 }
 
 #card-image {
   width: 100%;
   height: auto;
+}
+
+#card-header {
+  margin-top: 30px;
+  font-weight: lighter;
+}
+
+#card-price {
+  margin-top: 25px;
+  font-size: bolder;
+}
+
+#card-text {
+  margin-top: 35px;
+}
+
+#card-size {
+  margin-top: 40px;
+  font-weight: bold;
+}
+
+#card-buttons {
+  margin-top: 20px;
+  width: 165px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.size-button {
+  color: #888888;
+  border: 1.5px solid #CCCCCC;
+  font-size: 1.15rem;
+  width: 50px;
+  height: 50px;
+}
+
+.size-button:hover, .size-button-active {
+  border: 2px solid #222222;
+  color: #222222;
+  transition: ease-in-out .1s;
+}
+
+#submit-button {
+  margin-top: 30px;
+  width: 180px;
+  height: 45px;
+  text-align: center;
+  font-size: 1.3rem;
+  border: 2px solid #222222;
+}
+
+#submit-button:hover {
+  background-color: #222222;
+  color: white;
+  transition: ease-in-out .2s;
 }
