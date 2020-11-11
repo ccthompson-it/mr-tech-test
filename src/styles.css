@@ -2,6 +2,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 1rem;
 }
 
 .text-light {
@@ -36,6 +37,8 @@ button:focus {
 #card-box {
   width: 100%;
   padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
 }
 
 #card-image {
@@ -46,20 +49,24 @@ button:focus {
 #card-header {
   margin-top: 30px;
   font-weight: lighter;
+  font-size: 1.6rem;
 }
 
 #card-price {
   margin-top: 25px;
   font-size: bolder;
+  font-size: 1.3rem;
 }
 
 #card-text {
   margin-top: 35px;
+  font-size: 1.1rem;
 }
 
 #card-size {
   margin-top: 40px;
   font-weight: bold;
+  font-size: 1.1rem;
 }
 
 #card-buttons {
@@ -97,4 +104,28 @@ button:focus {
   background-color: #222222;
   color: white;
   transition: ease-in-out .2s;
+}
+
+@media only screen and (min-width: 750px) {
+  * {
+    font-size: 0.9rem;
+  }
+
+  #card-box {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  #card-image {
+    width: 50%;
+  }
+  #card-body{
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1050px) {
+  #card-image {
+    width: 30%;
+  }
 }
