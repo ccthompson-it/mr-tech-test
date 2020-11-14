@@ -1,3 +1,5 @@
+There is a refactored version on the 'Refactor' Branch, however I did it at a later date so it is up to you whether or not you use it.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
